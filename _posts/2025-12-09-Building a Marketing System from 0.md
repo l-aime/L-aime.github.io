@@ -22,3 +22,11 @@ To design a centralized marketing system, we must first clarify the essential ca
 **Reward Distribution Capability**: Accurately and reliably issuing promotional benefits (e.g., coupons, cashback) under high-concurrency scenarios. Accuracy here means no over-issuance and no mis-issuance.
 **Virtual Account System**: Acts as the “glue” in marketing scenarios, enabling seamless integration across campaign mechanics. For example, users earn virtual coins through daily check-ins or mini-games, and once accumulated, these coins can be redeemed for real-world rewards.
 **Risk Control Capability**: Marketing campaigns often attract massive traffic; any anomaly can lead to significant financial loss or public relations crises within minutes. Therefore, real-time and accurate risk prevention and control is an indispensable part of any marketing system.
+
+## 3. Marketing Core Entities
+Once the core capabilities are defined, we need to identify the fundamental entities in marketing. Drawing from the classic Marketing 4P framework (Product, Place, Price, Promotion), we can structure the key entities as follows:
+
+**Product**: Represents what the system recommends to users. The definition varies by business domain: Taobao recommends physical goods; TikTok recommends videos; Futu recommends financial products. In our context, “Product” refers to tasks (landing pages provided by business partners) and prizes (redeemable user benefits).
+**Place**: Determines where and how a product is presented. In our system, different marketing touchpoints are identified via Entrances.
+**Price**: While we don’t alter the base price of a product, we influence the final user payment amount by controlling the value of promotional rewards issued.
+**Promotion**: Serves as the central orchestrator of all marketing activities. Each campaign is represented by a Promotion entity, which governs all associated marketing mechanics, rules, and configurations.
