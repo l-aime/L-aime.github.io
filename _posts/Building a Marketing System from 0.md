@@ -1,4 +1,3 @@
-
 ---
 layout:     post
 title:      Build a Marketing System from 0 
@@ -6,7 +5,8 @@ date:       2025-12-08
 author:     BY
 header-img: img/post-bg-cook.jpg
 catalog: true
-tags: - Marketing 
+tags:
+    - Marketing
 ---
 
 
